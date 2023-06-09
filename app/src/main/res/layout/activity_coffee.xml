@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CoffeeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="커피 주문 앱"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!-- 커피 종류 선택 -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioEspresso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="에스프레소"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioLatte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="라떼" />
+
+        <RadioButton
+            android:id="@+id/radioCappuccino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카푸치노" />
+
+    </RadioGroup>
+
+    <!-- 사이즈 선택 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="사이즈"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <!-- 주문 버튼 -->
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="주문하기"
+        android:layout_marginTop="16dp"/>
+
+    <!-- 뒤로 가기 버튼 -->
+    <Button
+        android:id="@+id/btnGoBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="뒤로 가기"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
